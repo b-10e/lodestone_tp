@@ -1,0 +1,52 @@
+{
+  "type": "minecraft:multi_action",
+  "title": "Lodestone Warp Config",
+  "body": [
+    {
+      "type": "minecraft:plain_message",
+      "contents": "Blah",
+      "width": 300
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "text": "v1.0.0\nBy xokz",
+        "color": "gray"
+      },
+      "width": 300
+    }
+  ],
+  "actions": [
+    {
+      "label": "Website",
+      "action": {
+        "type": "open_url",
+        "url": "https://example.com/"
+      }
+    },
+    {
+      "label": "Issues",
+      "action": {
+        "type": "open_url",
+        "url": "https://github.com/example/test/issues"
+      }
+    },
+    {
+      "label": "Config..",
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "say hi"
+      }
+    }
+  ],
+  "exit_action": {
+    "action": {
+      "type": "show_dialog",
+      "dialog": "smithed:data_packs"
+    },
+    "label": {
+      "translate": "gui.back"
+    },
+    "width": 200
+  }
+}

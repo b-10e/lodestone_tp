@@ -1,0 +1,52 @@
+{
+  "type": "minecraft:multi_action",
+  "title": "Lodestone Warp",
+  "body": [
+    {
+      "type": "minecraft:plain_message",
+      "contents": "Thank you for using my datapack!",
+      "width": 300
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "text": "v1.0.0\nBy xokz",
+        "color": "gray"
+      },
+      "width": 300
+    }
+  ],
+  "actions": [
+    {
+      "label": "Website",
+      "action": {
+        "type": "open_url",
+        "url": "https://github.com/b-10e/lodestone_tp"
+      }
+    },
+    {
+      "label": "Issues",
+      "action": {
+        "type": "open_url",
+        "url": "https://github.com/b-10e/lodestone_tp/issues"
+      }
+    },
+    {
+      "label": "Config..",
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "lsw:config"
+      }
+    }
+  ],
+  "exit_action": {
+    "action": {
+      "type": "show_dialog",
+      "dialog": "smithed:data_packs"
+    },
+    "label": {
+      "translate": "gui.back"
+    },
+    "width": 200
+  }
+}
