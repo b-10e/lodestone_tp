@@ -1,0 +1,1 @@
+$execute in $(dimension) positioned $(x) $(y) $(z) positioned ~ ~1 ~ align xyz positioned ~0.5 ~0 ~0.5 run tp @s ~ ~ ~
