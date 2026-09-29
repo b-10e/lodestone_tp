@@ -1,4 +1,5 @@
-scoreboard players set @s lsw.charge_time -20
+# cooldown
+scoreboard players set @s lsw.charge_time -30
 
 # fx
 execute positioned ~ ~1 ~ run function lsw:fx/tp
@@ -8,8 +9,8 @@ execute if items entity @s weapon.mainhand minecraft:ender_pearl run item modify
 execute if items entity @s weapon.offhand minecraft:ender_pearl run item modify entity @s weapon.offhand lsw:remove_1
 
 # store destination
-execute if items entity @s weapon.mainhand minecraft:compass[minecraft:lodestone_tracker] run data modify storage lsw:temp macro set from entity @s SelectedItem.components."minecraft:lodestone_tracker".target
-execute if items entity @s weapon.offhand minecraft:compass[minecraft:lodestone_tracker] run data modify storage lsw:temp macro set from entity @s equipment.offhand.components."minecraft:lodestone_tracker".target
+execute if items entity @s weapon.mainhand *[minecraft:lodestone_tracker] run data modify storage lsw:temp macro set from entity @s SelectedItem.components."minecraft:lodestone_tracker".target
+execute if items entity @s weapon.offhand *[minecraft:lodestone_tracker] run data modify storage lsw:temp macro set from entity @s equipment.offhand.components."minecraft:lodestone_tracker".target
 
 data modify storage lsw:temp macro.x set from storage lsw:temp macro.pos[0]
 data modify storage lsw:temp macro.y set from storage lsw:temp macro.pos[1]
