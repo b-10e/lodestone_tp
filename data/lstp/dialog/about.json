@@ -1,10 +1,10 @@
 {
   "type": "minecraft:multi_action",
-  "title": "Lodestone Warp",
+  "title": "Lodestone TP",
   "body": [
     {
       "type": "minecraft:plain_message",
-      "contents": "Thank you for using my datapack!",
+      "contents": "Thank you for using Lodestone TP!",
       "width": 300
     },
     {
@@ -35,7 +35,7 @@
       "label": "Config..",
       "action": {
         "type": "minecraft:show_dialog",
-        "dialog": "lsw:config"
+        "dialog": "lstp:config"
       }
     }
   ],

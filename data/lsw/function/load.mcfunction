@@ -1,1 +1,0 @@
-scoreboard objectives add lsw.charge_time dummy

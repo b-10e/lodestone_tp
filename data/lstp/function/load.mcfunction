@@ -1,0 +1,1 @@
+scoreboard objectives add lstp.charge_time dummy
