@@ -1,4 +1,6 @@
 scoreboard players add @s lstp.charge_time 1
+tag @s remove lstp.has_destination
+tag @s remove lstp.has_fuel
 
 # fx
 execute if score @s lstp.charge_time matches 1 positioned ~ ~1 ~ run function lstp:fx/charge_1

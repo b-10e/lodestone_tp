@@ -1,0 +1,1 @@
+$item modify block ~ ~ ~ container.$(slot) lstp:remove_1

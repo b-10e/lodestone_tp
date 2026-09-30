@@ -1,0 +1,2 @@
+execute if items entity @s weapon.mainhand minecraft:ender_pearl run item modify entity @s weapon.mainhand lstp:remove_1
+execute if items entity @s weapon.offhand minecraft:ender_pearl run item modify entity @s weapon.offhand lstp:remove_1
