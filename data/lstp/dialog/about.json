@@ -47,6 +47,20 @@
         "type": "open_url",
         "url": "https://github.com/b-10e/lodestone_tp/issues"
       }
+    },
+    {
+      "label": "My Settings",
+      "action": {
+        "type": "show_dialog",
+        "dialog": "lstp:client_config"
+      }
+    },
+    {
+      "label": "Server Settings",
+      "action": {
+        "type": "show_dialog",
+        "dialog": "lstp:server_config"
+      }
     }
   ],
   "exit_action": {

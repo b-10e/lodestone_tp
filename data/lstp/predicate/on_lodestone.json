@@ -8,11 +8,6 @@
                 "block": {
                     "blocks": "minecraft:lodestone"
                 }
-            },
-            "type_specific/player": {
-                "input": {
-                    "sneak": true
-                }
             }
         }
     }

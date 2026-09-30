@@ -1,5 +1,11 @@
+# menu stuff
+function lstp:menu/main
+
 # requirements
-execute unless predicate lstp:sneaking_on_lodestone run return run function lstp:player/remove_charge
+execute unless predicate lstp:on_lodestone run return run function lstp:player/remove_charge
+execute as @s[tag=lstp.settings.disable_sneak_required] if predicate lstp:sneak_input run return run function lstp:player/remove_charge
+execute as @s[tag=!lstp.settings.disable_sneak_required] unless predicate lstp:sneak_input run return run function lstp:player/remove_charge
+execute if entity @s[tag=lstp.backwarp_prevention] run return run function lstp:player/remove_charge
 execute if score @s lstp.charge_time matches ..-1 run return run function lstp:player/remove_charge
 
 # check for fuel, either provided by the player or the block below

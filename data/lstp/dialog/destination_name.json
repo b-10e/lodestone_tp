@@ -1,0 +1,42 @@
+{
+    "title": [{"text": "Lodestone TP","color": "gray"},{"text": " > ","color": "dark_gray"},{"text": "My Settings","color": "gray"},{"text": " > ","color": "dark_gray"},{"text": "Destination Display","color": "white"}],
+    "type": "confirmation",
+    "inputs": [
+        {
+            "label": "Display Mode",
+            "key": "display_mode",
+            "type": "minecraft:single_option",
+            "options": [
+                {
+                    "display": "None",
+                    "id": "5",
+                    "initial": true
+                },
+                {
+                    "display": "Actionbar",
+                    "id": "6"
+                },
+                {
+                    "display": "Title",
+                    "id": "7"
+                }
+            ]
+        }
+    ],
+    "yes": {
+        "label": "Confirm",
+        "action": {
+            "type": "dynamic/run_command",
+            "template": "trigger lstp.menu.trigger set $(display_mode)"
+        }
+    },
+    "no": {
+        "label": {"translate": "gui.back"},
+        "action": {
+            "type": "show_dialog",
+            "dialog": "lstp:client_config"
+        }
+    },
+    "after_action": "none",
+    "pause": false
+}

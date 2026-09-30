@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:multi_action",
+    "title": "Lodestone TP | Server Config",
+    "actions": [
+        {
+            "label": "Show Destination Name On Teleport",
+            "action": {
+                "type": "minecraft:suggest_command",
+                "command": "give @s dirt"
+            }
+        }
+    ],
+    "exit_action": {
+        "action": {
+            "type": "show_dialog",
+            "dialog": "lstp:about"
+        },
+        "label": {
+            "translate": "gui.back"
+        },
+        "width": 200
+    }
+}

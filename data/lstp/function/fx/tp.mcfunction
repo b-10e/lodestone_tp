@@ -4,4 +4,4 @@ particle dust_color_transition{from_color:[1,0,1],to_color:[1,1,1],scale:1} ~ ~ 
 particle end_rod ~ ~ ~ 1 1 1 0.1 32
 
 attribute @s movement_speed modifier remove lstp:fov
-effect give @s minecraft:blindness 1 0 true
+effect give @s[tag=!lstp.settings.disable_tp_flash] minecraft:blindness 1 0 true
