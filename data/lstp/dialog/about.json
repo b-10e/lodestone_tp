@@ -4,7 +4,24 @@
   "body": [
     {
       "type": "minecraft:plain_message",
-      "contents": "Thank you for using Lodestone TP!",
+      "contents": {
+        "text":"How to use:",
+        "color": "white",
+        "bold": true
+      },
+      "width": 300
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": "Crouch on a Lodestone while holding\n an Ender Pearl and a Lodestone Compass.",
+      "width": 300
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "text":"Ender Pearls may also be supplied in\na block underneath. A Lodestone Compass may be\nprovided in an Item Frame up to 4 blocks above.",
+        "color":"gray"
+      },
       "width": 300
     },
     {
