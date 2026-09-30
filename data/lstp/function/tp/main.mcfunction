@@ -10,7 +10,7 @@ function lstp:tp/consume_fuel/main
 # store destination
 execute \
     align xyz positioned ~0 ~0 ~0 \
-    as @e[dx=0,type=#lstp:item_frame,tag=!smithed.strict,limit=1] \
+    as @e[dx=0,dy=3,type=#lstp:item_frame,tag=!smithed.strict,limit=1] \
         if items entity @s container.0 *[minecraft:lodestone_tracker] \
             run data modify storage lstp:temp macro set from entity @s Item.components."minecraft:lodestone_tracker".target
 execute if items entity @s weapon.offhand *[minecraft:lodestone_tracker] run data modify storage lstp:temp macro set from entity @s equipment.offhand.components."minecraft:lodestone_tracker".target

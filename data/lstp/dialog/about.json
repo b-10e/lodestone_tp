@@ -30,13 +30,6 @@
         "type": "open_url",
         "url": "https://github.com/b-10e/lodestone_tp/issues"
       }
-    },
-    {
-      "label": "Config..",
-      "action": {
-        "type": "minecraft:show_dialog",
-        "dialog": "lstp:config"
-      }
     }
   ],
   "exit_action": {

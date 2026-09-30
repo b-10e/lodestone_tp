@@ -1,6 +1,7 @@
 {
+  "id":"lstp",
   "pack": {
-    "description": "teleport to lodestones",
+    "description": "Teleport to Lodestones",
     "min_format": 121,
     "max_format": 121
   }

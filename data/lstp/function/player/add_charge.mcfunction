@@ -3,6 +3,7 @@ tag @s remove lstp.has_destination
 tag @s remove lstp.has_fuel
 
 # fx
+execute if predicate {type:"random_chance",chance:0.4} positioned ~ ~1 ~ run particle minecraft:end_rod ~ ~ ~ 0 0 0 0.1 1
 execute if score @s lstp.charge_time matches 1 positioned ~ ~1 ~ run function lstp:fx/charge_1
 execute if score @s lstp.charge_time matches 21 positioned ~ ~1 ~ run function lstp:fx/charge_2
 execute if score @s lstp.charge_time matches 41 positioned ~ ~1 ~ run function lstp:fx/charge_3
