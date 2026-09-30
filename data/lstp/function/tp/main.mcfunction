@@ -4,9 +4,6 @@ scoreboard players set @s lstp.charge_time -30
 # fx
 execute positioned ~ ~1 ~ run function lstp:fx/tp
 
-# consume fuel
-function lstp:tp/consume_fuel/main
-
 # store destination
 execute \
     align xyz positioned ~0 ~0 ~0 \
@@ -19,6 +16,9 @@ execute if items entity @s weapon.mainhand *[minecraft:lodestone_tracker] run da
 data modify storage lstp:temp macro.x set from storage lstp:temp macro.pos[0]
 data modify storage lstp:temp macro.y set from storage lstp:temp macro.pos[1]
 data modify storage lstp:temp macro.z set from storage lstp:temp macro.pos[2]
+
+# consume fuel
+function lstp:tp/consume_fuel/main
 
 # teleport
 function lstp:tp/tp with storage lstp:temp macro
