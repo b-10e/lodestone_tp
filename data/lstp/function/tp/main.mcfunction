@@ -21,7 +21,7 @@ data modify storage lstp:temp macro.z set from storage lstp:temp macro.pos[2]
 function lstp:tp/consume_fuel/main
 
 # teleport
-function lstp:tp/tp with storage lstp:temp macro
+function lstp:tp/macro with storage lstp:temp macro
 
 # fx
 execute at @s positioned ~ ~1 ~ run function lstp:fx/tp
