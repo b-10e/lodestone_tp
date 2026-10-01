@@ -18,9 +18,9 @@ data modify storage lstp:temp macro.y set from storage lstp:temp compass."minecr
 data modify storage lstp:temp macro.z set from storage lstp:temp compass."minecraft:lodestone_tracker".target.pos[2]
 data modify storage lstp:temp macro.dimension set from storage lstp:temp compass."minecraft:lodestone_tracker".target.dimension
 
-# store custom name if applicable
+# store destination name if applicable
 execute as @s[tag=lstp.settings.show_name.actionbar] if data storage lstp:temp compass."minecraft:custom_name" run title @s actionbar {storage:"lstp:temp",nbt:"compass.\"minecraft:custom_name\"",interpret:true}
-execute as @s[tag=lstp.settings.show_name.title] if data storage lstp:temp compass."minecraft:custom_name" run title @s title {storage:"lstp:temp",nbt:"compass.\"minecraft:custom_name\"",interpret:true}
+execute as @s[tag=!lstp.settings.show_name.actionbar,tag=!lstp.settings.show_name.none] if data storage lstp:temp compass."minecraft:custom_name" run title @s title {storage:"lstp:temp",nbt:"compass.\"minecraft:custom_name\"",interpret:true}
 
 # consume fuel
 function lstp:tp/consume_fuel/main
