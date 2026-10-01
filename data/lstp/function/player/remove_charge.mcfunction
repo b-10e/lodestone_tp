@@ -9,5 +9,3 @@ execute if score @s lstp.charge_time matches ..-1 run scoreboard players add @s 
 execute if score @s lstp.charge_time matches 1.. run scoreboard players set @s lstp.charge_time 0
 
 attribute @s movement_speed modifier remove lstp:fov
-tag @s remove lstp.has_destination
-tag @s remove lstp.has_fuel

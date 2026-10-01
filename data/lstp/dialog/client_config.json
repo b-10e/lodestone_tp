@@ -1,6 +1,12 @@
 {
     "type": "minecraft:multi_action",
-    "title": [{"text": "Lodestone TP","color": "gray"},{"text": " > ","color": "dark_gray"},{"text": "My Settings","color": "white"}],
+    "title": [
+        {"translate": "selectWorld.dataPacks","color": "gray"},
+        {"text": " > ","color": "dark_gray"},
+        {"translate": "menu.lstp.lodestone_tp","fallback": "Lodestone TP","color": "gray"},
+        {"text": " > ","color": "dark_gray"},
+        {"text": "Preferences","color": "white"}
+    ],
     "actions": [
         {
             "label": [{"sprite": "minecraft:mob_effect/nausea","atlas": "minecraft:gui"},{"text":" Toggle Screen Wobble"}],
@@ -27,7 +33,7 @@
             "tooltip": "Toggle the FOV decrease applied during the teleport animation"
         },
         {
-            "label": [{"sprite": "minecraft:item/iron_boots","atlas": "minecraft:items"},{"text":" Toggle Sneak requirement"}],
+            "label": [{"sprite": "minecraft:item/iron_boots","atlas": "minecraft:items"},{"text":" Toggle Sneak Requirement"}],
             "action": {
                 "type": "minecraft:run_command",
                 "command": "trigger lstp.menu.trigger set 4"

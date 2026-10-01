@@ -1,0 +1,1 @@
+$data modify storage lstp:config fuel_item_id set value "$(id)"

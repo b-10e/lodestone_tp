@@ -1,0 +1,1 @@
+return run function lstp:player/check_fuel/macro with storage lstp:config

@@ -1,6 +1,14 @@
 {
   "type": "minecraft:multi_action",
-  "title": "Lodestone TP",
+  "title": [
+    {"translate": "selectWorld.dataPacks","color": "gray"},
+    {"text": " > ","color": "dark_gray"},
+    {"translate": "menu.lstp.lodestone_tp","fallback": "Lodestone TP","color": "white"}
+  ],
+  "external_title": [
+    {"sprite": "minecraft:block/lodestone_side"},
+    {"translate": "menu.lstp.lodestone_tp","fallback": " %s","with":[{"text":"Lodestone TP"}],"color": "white"}
+  ],
   "body": [
     {
       "type": "minecraft:plain_message",
@@ -49,7 +57,7 @@
       }
     },
     {
-      "label": "My Settings",
+      "label": "Preferences",
       "action": {
         "type": "show_dialog",
         "dialog": "lstp:client_config"
@@ -60,7 +68,8 @@
       "action": {
         "type": "show_dialog",
         "dialog": "lstp:server_config"
-      }
+      },
+      "tooltip": "(Only players with OP)"
     }
   ],
   "exit_action": {

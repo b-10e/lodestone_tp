@@ -7,7 +7,7 @@ execute positioned ~ ~1 ~ run function lstp:fx/tp
 # store destination
 execute \
     align xyz positioned ~0 ~0 ~0 \
-    as @e[dx=0,dy=3,type=#lstp:item_frame,tag=!smithed.strict,limit=1] \
+    as @n[dx=0,dy=3,type=#lstp:item_frame,tag=!smithed.strict] \
         if items entity @s container.0 *[minecraft:lodestone_tracker] \
             run data modify storage lstp:temp compass set from entity @s Item.components
 execute if items entity @s weapon.offhand *[minecraft:lodestone_tracker] run data modify storage lstp:temp compass set from entity @s equipment.offhand.components

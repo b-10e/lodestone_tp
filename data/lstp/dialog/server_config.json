@@ -1,12 +1,18 @@
 {
     "type": "minecraft:multi_action",
-    "title": "Lodestone TP | Server Config",
+    "title": [
+        {"translate": "selectWorld.dataPacks","color": "gray"},
+        {"text": " > ","color": "dark_gray"},
+        {"translate": "menu.lstp.lodestone_tp","fallback": "Lodestone TP","color": "gray"},
+        {"text": " > ","color": "dark_gray"},
+        {"text": "Server Settings","color": "white"}
+    ],
     "actions": [
         {
-            "label": "Show Destination Name On Teleport",
+            "label": "Change Fuel",
             "action": {
-                "type": "minecraft:suggest_command",
-                "command": "give @s dirt"
+                "type": "minecraft:show_dialog",
+                "dialog": "lstp:change_fuel_item"
             }
         }
     ],

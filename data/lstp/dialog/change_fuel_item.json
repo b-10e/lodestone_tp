@@ -4,41 +4,31 @@
         {"text": " > ","color": "dark_gray"},
         {"text": "Lodestone TP","color": "gray"},
         {"text": " > ","color": "dark_gray"},
-        {"text": "Preferences","color": "gray"},
+        {"text": "Server Settings","color": "gray"},
         {"text": " > ","color": "dark_gray"},
-        {"text": "Destination Display","color": "white"}
+        {"text": "Fuel","color": "white"}
     ],
     "type": "confirmation",
     "inputs": [
         {
-            "label": "Display Mode",
-            "key": "display_mode",
-            "type": "minecraft:single_option",
-            "options": [
-                {
-                    "display": "None",
-                    "id": "5",
-                    "initial": true
-                },
-                {
-                    "display": "Title",
-                    "id": "7"
-                }
-            ]
+            "label": "Item ID",
+            "key": "id",
+            "type": "minecraft:text",
+            "initial": "minecraft:ender_pearl"
         }
     ],
     "yes": {
         "label": "Confirm",
         "action": {
             "type": "dynamic/run_command",
-            "template": "trigger lstp.menu.trigger set $(display_mode)"
+            "template": "function lstp:menu/settings/set_fuel_item {id:\"$(id)\"}"
         }
     },
     "no": {
         "label": {"translate": "gui.back"},
         "action": {
             "type": "show_dialog",
-            "dialog": "lstp:client_config"
+            "dialog": "lstp:server_config"
         }
     },
     "after_action": "none",
