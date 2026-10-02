@@ -3,6 +3,7 @@ function lstp:menu/main
 
 # requirements
 execute unless predicate lstp:on_lodestone run return run function lstp:player/remove_charge
+
 execute as @s[tag=lstp.settings.sneak_required.false] if predicate lstp:sneak_input run return run function lstp:player/remove_charge
 execute as @s[tag=!lstp.settings.sneak_required.false] unless predicate lstp:sneak_input run return run function lstp:player/remove_charge
 execute if entity @s[tag=lstp.backwarp_prevention] run return run function lstp:player/remove_charge
