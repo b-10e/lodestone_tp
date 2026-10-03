@@ -7,7 +7,7 @@ execute positioned ~ ~1 ~ run function lstp:fx/tp
 # store destination
 execute \
     align xyz positioned ~0 ~0 ~0 \
-    as @n[dx=0,dy=3,type=#lstp:item_frame,tag=!smithed.strict] \
+    as @n[dx=0,dy=4,type=#lstp:item_frame,tag=!smithed.strict] \
         if items entity @s container.0 *[minecraft:lodestone_tracker] \
             run data modify storage lstp:temp compass set from entity @s Item.components
 execute if items entity @s weapon.offhand *[minecraft:lodestone_tracker] run data modify storage lstp:temp compass set from entity @s equipment.offhand.components
@@ -23,7 +23,7 @@ execute as @s[tag=lstp.settings.show_name.actionbar] if data storage lstp:temp c
 execute as @s[tag=!lstp.settings.show_name.actionbar,tag=!lstp.settings.show_name.none] if data storage lstp:temp compass."minecraft:custom_name" run title @s title {storage:"lstp:temp",nbt:"compass.\"minecraft:custom_name\"",interpret:true}
 
 # consume fuel
-function lstp:tp/consume_fuel/main
+function lstp:tp/consume_fuel/main with storage lstp:config
 
 # backwarp prevention
 tag @s add lstp.backwarp_prevention

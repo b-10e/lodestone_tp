@@ -27,7 +27,7 @@
     {
       "type": "minecraft:plain_message",
       "contents": {
-        "text":"Ender Pearls may also be supplied in\na block underneath. A Lodestone Compass may be\nprovided in an Item Frame up to 4 blocks above.",
+        "text":"Ender Pearls may also be supplied in\na block underneath. A Lodestone Compass may be\nprovided in an Item Frame up to 5 blocks above.",
         "color":"gray"
       },
       "width": 300
@@ -81,5 +81,6 @@
       "translate": "gui.back"
     },
     "width": 200
-  }
+  },
+  "pause": false
 }
