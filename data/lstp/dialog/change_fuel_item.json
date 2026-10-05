@@ -11,7 +11,7 @@
     "type": "confirmation",
     "inputs": [
         {
-            "label": "Item ID",
+            "label": "Fuel Item ID",
             "key": "fuel_item_id",
             "type": "minecraft:text",
             "initial": "minecraft:ender_pearl"

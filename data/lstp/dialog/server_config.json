@@ -9,7 +9,7 @@
     ],
     "actions": [
         {
-            "label": [{"sprite": "item/coal","atlas": "items"},{"text":" Fuel"}],
+            "label": [{"sprite": "item/ender_pearl","atlas": "items"},{"text":" Fuel"}],
             "action": {
                 "type": "minecraft:show_dialog",
                 "dialog": "lstp:change_fuel_item"

@@ -21,7 +21,7 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text":"Crouch on a Lodestone while holding an Ender Pearl and a Lodestone Compass.",
+                "text":"Hold an Ender Pearl and a Lodestone Compass and crouch on a Lodestone.",
                 "color":"gray"
             }
         },
