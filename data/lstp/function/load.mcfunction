@@ -1,9 +1,22 @@
 scoreboard objectives add lstp.charge_time dummy
 scoreboard objectives add lstp.menu.trigger trigger
 scoreboard objectives add lstp.config dummy
+scoreboard objectives add lstp.int dummy
+scoreboard objectives add lstp.const dummy
+
+scoreboard players set #2 lstp.const 2
+scoreboard players set #lstp.pitch_multiplier lstp.const 2
+scoreboard players set #lstp.fov_multiplier lstp.const 2
 
 # default configs
-execute unless score #lstp.tp_time lstp.config matches 0.. run scoreboard players set #lstp.tp_time lstp.config 60
-execute unless score #lstp.zoom_interval lstp.config matches 0.. run scoreboard players set #lstp.zoom_interval lstp.config 20
-
+execute unless data storage lstp:config tp_time run data modify storage lstp:config tp_time set value 60
+execute unless data storage lstp:config charge_interval run data modify storage lstp:config charge_interval set value 20
 execute unless data storage lstp:config fuel_item_id run data modify storage lstp:config fuel_item_id set value "minecraft:ender_pearl"
+
+execute unless score #lstp.tp_time lstp.config matches 0.. store result score #lstp.tp_time lstp.config run data get storage lstp:config tp_time
+execute unless score #lstp.charge_interval lstp.config matches 0.. store result score #lstp.charge_interval lstp.config run data get storage lstp:config charge_interval
+
+data modify storage lstp:config message_prefix set value [{text:"[",color:"dark_gray"},{text:"Lodestone TP",color:"gray"},{"text":"] ",color:"dark_gray"}]
+data modify storage lstp:config disabled set value [{text:"[",color:"dark_gray"},{text:"X",color:"red",bold:true},{"text":"] ",color:"dark_gray"}]
+data modify storage lstp:config enabled set value [{text:"[",color:"dark_gray"},{text:"✔",color:"green"},{"text":"] ",color:"dark_gray"}]
+#tellraw @s [{text:"[",color:"dark_gray"},{text:"Lodestone TP",color:"gray"},{"text":"] ",color:"dark_gray"}]

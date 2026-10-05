@@ -1,6 +1,3 @@
-scoreboard players reset @s lstp.menu.trigger
-scoreboard players enable @s lstp.menu.trigger
-
 # fx
 execute if entity @s[tag=lstp.settings.screen_zoom.false] run playsound minecraft:block.note_block.bit player @s ~ ~ ~ 1 1.5
 execute if entity @s[tag=lstp.settings.screen_zoom.false] run tellraw @s [{text:"[Lodestone TP] ",color:"gray"},{text:"Screen Zoom Enabled",color:"green"}]

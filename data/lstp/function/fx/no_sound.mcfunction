@@ -1,0 +1,1 @@
+playsound minecraft:block.note_block.bit player @s ~ ~ ~ 1 0.7

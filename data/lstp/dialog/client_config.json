@@ -14,7 +14,7 @@
                 "type": "minecraft:run_command",
                 "command": "trigger lstp.menu.trigger set 1"
             },
-            "tooltip": "Toggle the nausea effect given during the teleport animation"
+            "tooltip": "Toggle charge animation nausea effect"
         },
         {
             "label": [{"sprite": "minecraft:mob_effect/night_vision","atlas": "minecraft:gui"},{"text":" Toggle Teleport Flash"}],
@@ -22,7 +22,7 @@
                 "type": "minecraft:run_command",
                 "command": "trigger lstp.menu.trigger set 2"
             },
-            "tooltip": "Toggle the blindness effect given after the teleport animation"
+            "tooltip": "Toggle post-teleport blindness effect"
         },
         {
             "label": [{"sprite": "minecraft:mob_effect/invisibility","atlas": "minecraft:gui"},{"text":" Toggle Screen Zoom"}],
@@ -30,7 +30,7 @@
                 "type": "minecraft:run_command",
                 "command": "trigger lstp.menu.trigger set 3"
             },
-            "tooltip": "Toggle the FOV decrease applied during the teleport animation"
+            "tooltip": "Toggle charge animation FOV change"
         },
         {
             "label": [{"sprite": "minecraft:item/iron_boots","atlas": "minecraft:items"},{"text":" Toggle Sneak Requirement"}],
@@ -46,7 +46,7 @@
                 "type": "minecraft:show_dialog",
                 "dialog": "lstp:destination_name"
             },
-            "tooltip": "Configure where the destination name is displayed"
+            "tooltip": "Configure destination name display"
         }
     ],
     "after_action": "none",

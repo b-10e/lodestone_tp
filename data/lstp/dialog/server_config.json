@@ -9,10 +9,17 @@
     ],
     "actions": [
         {
-            "label": "Change Fuel",
+            "label": [{"sprite": "item/coal","atlas": "items"},{"text":" Fuel"}],
             "action": {
                 "type": "minecraft:show_dialog",
                 "dialog": "lstp:change_fuel_item"
+            }
+        },
+        {
+            "label": [{"sprite": "item/clock_00","atlas": "items"},{"text":" Teleport Timings"}],
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "lstp:tp_time"
             }
         }
     ],

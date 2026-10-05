@@ -6,22 +6,36 @@
         {"text": " > ","color": "dark_gray"},
         {"text": "Server Settings","color": "gray"},
         {"text": " > ","color": "dark_gray"},
-        {"text": "Fuel","color": "white"}
+        {"text": "Teleport Time","color": "white"}
     ],
     "type": "confirmation",
     "inputs": [
         {
-            "label": "Item ID",
-            "key": "fuel_item_id",
-            "type": "minecraft:text",
-            "initial": "minecraft:ender_pearl"
+            "label": "Teleport Time",
+            "key": "tp_time",
+            "type": "minecraft:number_range",
+            "initial": 3,
+            "start": 0,
+            "end": 30,
+            "step": 0.5,
+            "label_format": "%1$s: %2$s second(s)"
+        },
+        {
+            "label": "Charge Interval",
+            "key": "charge_interval",
+            "type": "minecraft:number_range",
+            "initial": 1,
+            "start": 0,
+            "end": 10,
+            "step": 0.5,
+            "label_format": "%1$s: %2$s second(s)"
         }
     ],
     "yes": {
         "label": "Confirm",
         "action": {
             "type": "dynamic/run_command",
-            "template": "function lstp:menu/settings/set_fuel_item {id:\"$(fuel_item_id)\"}"
+            "template": "function lstp:menu/settings/set_tp_time {\"tp_time\":$(tp_time),\"charge_interval\":$(charge_interval)}"
         }
     },
     "no": {

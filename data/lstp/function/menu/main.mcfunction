@@ -4,4 +4,5 @@ execute if score @s lstp.menu.trigger matches 3 run function lstp:menu/preferenc
 execute if score @s lstp.menu.trigger matches 4 run function lstp:menu/preferences/sneak_required
 execute if score @s lstp.menu.trigger matches 5..10 run function lstp:menu/preferences/show_name
 
+scoreboard players reset @s lstp.menu.trigger
 scoreboard players enable @s lstp.menu.trigger
