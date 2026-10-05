@@ -18,6 +18,6 @@ execute unless function lstp:player/check_fuel/main run return run function lstp
 # check for compass, either provided by the player or the item frame above
 execute unless function lstp:player/check_compass run return run function lstp:player/remove_charge_time
 
-# add charge if player has both fuel and a destination
+# add charge time if player has both fuel and a destination
 function lstp:player/add_charge_time
 
