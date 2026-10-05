@@ -1,0 +1,212 @@
+{
+    "title": [
+        {"translate": "selectWorld.dataPacks","color": "gray"},
+        {"text": " > ","color": "dark_gray"},
+        {"text": "Lodestone TP","color": "gray"},
+        {"text": " > ","color": "dark_gray"},
+        {"text": "How To Use","color": "white"}
+    ],
+    "type": "minecraft:notice",
+    "external_title": "How To Use",
+    "body": [
+        {
+            "type": "minecraft:plain_message",
+            "width": 300,
+            "contents": {
+                "text": "How To Use",
+                "bold": true,
+                "color": "white"
+            }
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text":"Crouch on a Lodestone while holding an Ender Pearl and a Lodestone Compass.",
+                "color":"gray"
+            }
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": [
+                {"sprite":"item/iron_helmet","atlas": "items","hover_event": 
+                    {"action": "show_text","value": 
+                        [
+                            {"translate": "entity.minecraft.player"}
+                        ]
+                    }
+                },
+                {"text": "\n"},
+                {"sprite":"item/compass_00","atlas": "items","hover_event": 
+                    {"action": "show_text","value": 
+                        [
+                            {"translate": "item.minecraft.lodestone_compass"},
+                            {"text": "\nLinked to a Lodestone somewhere else","color": "gray"}
+                        ]
+                    }
+                },
+                {"sprite":"item/iron_chestplate","atlas": "items","hover_event": 
+                    {"action": "show_text","value": 
+                        [
+                            {"translate": "entity.minecraft.player"}
+                        ]
+                    }
+                },
+                {"sprite":"item/ender_pearl","atlas": "items","hover_event": 
+                    {"action": "show_text","value": 
+                        [
+                            {"translate": "item.minecraft.ender_pearl"}
+                        ]
+                    }
+                },
+                {"text": "\n"},
+                {"sprite":"item/iron_boots","atlas": "items","hover_event": 
+                    {"action": "show_text","value": 
+                        [
+                            {"translate": "entity.minecraft.player"}
+                        ]
+                    }
+                },
+                {"text": "\n"},
+                {"sprite":"block/lodestone_side","atlas": "blocks","hover_event": 
+                    {"action": "show_text","value": 
+                        [
+                            {"translate": "block.minecraft.lodestone"}
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "type": "minecraft:plain_message",
+            "width": 300,
+            "contents": {
+                "text": "Advanced Usage",
+                "bold": true,
+                "color": "white"
+            }
+        },
+        {
+            "type": "minecraft:plain_message",
+            "width": 300,
+            "contents": {
+                "text": "Supplying Fuel",
+                "bold": true,
+                "color": "gray"
+            }
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text":"Ender Pearls may also be supplied from a block directly underneath the Lodestone. All vanilla blocks and most modded blocks are supported. Ender Pearls in containers will be prioritized over ones held in hand.",
+                "color": "gray"
+            }
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": [
+                {"sprite":"block/lodestone_side","atlas": "blocks","hover_event": 
+                    {"action": "show_text","value": 
+                        [
+                            {"translate": "block.minecraft.lodestone"}
+                        ]
+                    }
+                },
+                {"text":"\n"},
+                {"sprite":"block/barrel_side","atlas": "blocks","hover_event": 
+                    {"action": "show_text","value": 
+                        [
+                            {"translate": "block.minecraft.barrel"},
+                            {"text": "\nContains ","color": "gray"},
+                            {"sprite": "item/ender_pearl","atlas": "items"}
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "type": "minecraft:plain_message",
+            "width": 300,
+            "contents": {
+                "text": "Destinations",
+                "bold": true,
+                "color": "gray"
+            }
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text":"A Lodestone Compass may alternatively be provided in an Item Frame up to 5 blocks directly above the Lodestone. A Lodestone Compass held in hand will be prioritized over one in an Item Frame.",
+                "color": "gray"
+            }
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": [
+                {"sprite":"block/red_stained_glass","atlas": "blocks","hover_event": 
+                    {"action": "show_text","value": 
+                        [
+                            {"text":"Too far away"}
+                        ]
+                    }
+                },
+                {"text":"\n"},
+                {"sprite":"block/green_stained_glass","atlas": "blocks","hover_event": 
+                    {"action": "show_text","value": 
+                        [
+                            {"text":"Valid Item Frame location"}
+                        ]
+                    }
+                },
+                {"text":"\n"},
+                {"sprite":"block/green_stained_glass","atlas": "blocks","hover_event": 
+                    {"action": "show_text","value": 
+                        [
+                            {"text":"Valid Item Frame location"}
+                        ]
+                    }
+                },
+                {"text":"\n"},
+                {"sprite":"block/green_stained_glass","atlas": "blocks","hover_event": 
+                    {"action": "show_text","value": 
+                        [
+                            {"text":"Valid Item Frame location"}
+                        ]
+                    }
+                },
+                {"text":"\n"},
+                {"sprite":"block/green_stained_glass","atlas": "blocks","hover_event": 
+                    {"action": "show_text","value": 
+                        [
+                            {"text":"Valid Item Frame location"}
+                        ]
+                    }
+                },
+                {"text":"\n"},
+                {"sprite":"block/green_stained_glass","atlas": "blocks","hover_event": 
+                    {"action": "show_text","value": 
+                        [
+                            {"text":"Valid Item Frame location"}
+                        ]
+                    }
+                },
+                {"text":"\n"},
+                {"sprite":"block/lodestone_side","atlas": "blocks","hover_event": 
+                    {"action": "show_text","value": 
+                        [
+                            {"translate": "block.minecraft.lodestone"}
+                        ]
+                    }
+                }
+            ]
+        }
+    ],
+    "action": {
+        "label": {
+            "translate": "gui.back"
+        },
+        "action": {
+            "type": "show_dialog",
+            "dialog": "lstp:about"
+        }
+    }
+}

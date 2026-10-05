@@ -13,22 +13,8 @@
     {
       "type": "minecraft:plain_message",
       "contents": {
-        "text":"How to use:",
-        "color": "white",
-        "bold": true
-      },
-      "width": 300
-    },
-    {
-      "type": "minecraft:plain_message",
-      "contents": "Crouch on a Lodestone while holding\n an Ender Pearl and a Lodestone Compass.",
-      "width": 300
-    },
-    {
-      "type": "minecraft:plain_message",
-      "contents": {
-        "text":"Ender Pearls may also be supplied in\na block underneath. A Lodestone Compass may be\nprovided in an Item Frame up to 5 blocks above.",
-        "color":"gray"
+        "text":"A convenient way to get around the world!",
+        "color":"white"
       },
       "width": 300
     },
@@ -70,6 +56,16 @@
         "dialog": "lstp:server_config"
       },
       "tooltip": "(Only players with OP)"
+    },
+    {
+      "label": [
+        {"sprite": "item/knowledge_book","atlas": "items"},
+        {"translate": "menu.lstp.lodestone_tp","fallback": " %s","with":[{"text":"How To Use"}],"color": "white"}
+      ],
+      "action": {
+        "type": "show_dialog",
+        "dialog": "lstp:how_to_use"
+      }
     }
   ],
   "exit_action": {

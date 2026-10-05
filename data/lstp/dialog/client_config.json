@@ -25,7 +25,7 @@
             "tooltip": "Toggle post-teleport blindness effect"
         },
         {
-            "label": [{"sprite": "minecraft:mob_effect/invisibility","atlas": "minecraft:gui"},{"text":" Toggle Screen Zoom"}],
+            "label": [{"sprite": "minecraft:item/spyglass","atlas": "minecraft:items"},{"text":" Toggle Screen Zoom"}],
             "action": {
                 "type": "minecraft:run_command",
                 "command": "trigger lstp.menu.trigger set 3"
