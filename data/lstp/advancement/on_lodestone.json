@@ -1,0 +1,23 @@
+{
+    "criteria": {
+        "step_on_lodestone": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "player": {
+                    "type": "entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "stepping_on": {
+                            "block": {
+                                "blocks": "minecraft:lodestone"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "lstp:menu/first_time"
+    }
+}

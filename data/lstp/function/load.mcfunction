@@ -22,7 +22,7 @@ execute unless score #lstp.charge_interval lstp.config matches 0.. store result 
 execute unless score #lstp.fuel_item_count lstp.config matches 0.. store result score #lstp.fuel_item_count lstp.config run data get storage lstp:config fuel_item_count
 execute unless score #lstp.fuel_level_count lstp.config matches 0.. store result score #lstp.fuel_level_count lstp.config run data get storage lstp:config fuel_level_count
 
-data modify storage lstp:text message_prefix set value [{text:"[",color:"dark_gray"},{text:"Lodestone TP",color:"gray"},{"text":"] ",color:"dark_gray"}]
+data modify storage lstp:text message_prefix set value [{text:"[",color:"gray"},{text:"Lodestone TP",color:"dark_purple"},{"text":"] ",color:"gray"}]
 data modify storage lstp:text disabled set value [{text:"[",color:"dark_gray"},{text:"X",color:"red",bold:true},{"text":"] ",color:"dark_gray"}]
 data modify storage lstp:text enabled set value [{text:"[",color:"dark_gray"},{text:"✔",color:"green"},{"text":"] ",color:"dark_gray"}]
-#tellraw @s [{text:"[",color:"dark_gray"},{text:"Lodestone TP",color:"gray"},{"text":"] ",color:"dark_gray"}]
+#tellraw @s [{text:"[",color:"gray"},{text:"Lodestone TP",color:"dark_purple"},{"text":"] ",color:"gray"}]
