@@ -70,7 +70,7 @@
         }
     ],
     "yes": {
-        "label": "Confirm and Continue",
+        "label": "Confirm",
         "action": {
             "type": "dynamic/run_command",
             "template": "function lstp:menu/settings/set_fuel {fuel_type:\"$(fuel_type)\",fuel_item_id:\"$(fuel_item_id)\",fuel_item_count:$(fuel_item_count),fuel_level_count:$(fuel_level_count)}"

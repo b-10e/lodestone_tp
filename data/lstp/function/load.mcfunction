@@ -14,6 +14,8 @@ execute unless data storage lstp:config charge_interval run data modify storage 
 execute unless data storage lstp:config fuel_item_id run data modify storage lstp:config fuel_item_id set value "minecraft:ender_pearl"
 execute unless data storage lstp:config fuel_item_count run data modify storage lstp:config fuel_item_count set value 1
 execute unless data storage lstp:config fuel_level_count run data modify storage lstp:config fuel_level_count set value 1
+execute unless data storage lstp:config priority_fuel_type run data modify storage lstp:config priority_fuel_type set value "item"
+execute unless data storage lstp:config fuel_type run data modify storage lstp:config fuel_type set value "item"
 
 execute unless score #lstp.tp_time lstp.config matches 0.. store result score #lstp.tp_time lstp.config run data get storage lstp:config tp_time
 execute unless score #lstp.charge_interval lstp.config matches 0.. store result score #lstp.charge_interval lstp.config run data get storage lstp:config charge_interval
