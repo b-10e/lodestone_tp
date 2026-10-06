@@ -1,9 +1,6 @@
 # cooldown
 scoreboard players set @s lstp.charge_time -30
 
-# fx
-execute positioned ~ ~1 ~ run function lstp:fx/tp
-
 # store destination
 execute \
     align xyz positioned ~0 ~0 ~0 \
@@ -18,6 +15,12 @@ data modify storage lstp:temp macro.y set from storage lstp:temp compass."minecr
 data modify storage lstp:temp macro.z set from storage lstp:temp compass."minecraft:lodestone_tracker".target.pos[2]
 data modify storage lstp:temp macro.dimension set from storage lstp:temp compass."minecraft:lodestone_tracker".target.dimension
 
+# dimension check
+execute \
+    if data storage lstp:config {allow_cross_dimensional_tp:false} \
+    unless function lstp:tp/is_destination_dimension_same/main \
+        run return run function lstp:tp/fail
+
 # store destination name if applicable
 execute as @s[tag=lstp.settings.show_name.actionbar] if data storage lstp:temp compass."minecraft:custom_name" run title @s actionbar {storage:"lstp:temp",nbt:"compass.\"minecraft:custom_name\"",interpret:true}
 execute as @s[tag=!lstp.settings.show_name.actionbar,tag=!lstp.settings.show_name.none] if data storage lstp:temp compass."minecraft:custom_name" run title @s title {storage:"lstp:temp",nbt:"compass.\"minecraft:custom_name\"",interpret:true}
@@ -27,6 +30,9 @@ function lstp:tp/consume_fuel/main
 
 # backwarp prevention
 tag @s add lstp.backwarp_prevention
+
+# fx
+execute positioned ~ ~1 ~ run function lstp:fx/tp
 
 # teleport
 function lstp:tp/macro with storage lstp:temp macro
