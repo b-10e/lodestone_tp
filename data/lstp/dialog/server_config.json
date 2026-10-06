@@ -9,14 +9,14 @@
     ],
     "actions": [
         {
-            "label": [{"sprite": "item/ender_pearl","atlas": "items"},{"text":" Fuel"}],
+            "label": [{"sprite": "item/experience_bottle","atlas": "items"},{"text":" Fuel"}],
             "action": {
                 "type": "minecraft:show_dialog",
-                "dialog": "lstp:change_fuel_item"
+                "dialog": "lstp:change_fuel_type"
             }
         },
         {
-            "label": [{"sprite": "item/clock_00","atlas": "items"},{"text":" Teleport Timings"}],
+            "label": [{"sprite": "item/ender_pearl","atlas": "items"},{"text":" Teleportation"}],
             "action": {
                 "type": "minecraft:show_dialog",
                 "dialog": "lstp:tp_time"
@@ -32,5 +32,6 @@
             "translate": "gui.back"
         },
         "width": 200
-    }
+    },
+    "pause": false
 }

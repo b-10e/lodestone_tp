@@ -6,10 +6,18 @@
         {"text": " > ","color": "dark_gray"},
         {"text": "Server Settings","color": "gray"},
         {"text": " > ","color": "dark_gray"},
-        {"text": "Teleport Time","color": "white"}
+        {"text": "Teleportation","color": "white"}
     ],
     "type": "confirmation",
     "inputs": [
+        {
+            "type": "minecraft:boolean",
+            "key": "allow_cross_dimensional_tp",
+            "label": "Allow Teleporting Across Dimensions",
+            "initial": true,
+            "on_true": "true",
+            "on_false": "false"
+        },
         {
             "label": "Teleport Time",
             "key": "tp_time",
@@ -35,7 +43,7 @@
         "label": "Confirm",
         "action": {
             "type": "dynamic/run_command",
-            "template": "function lstp:menu/settings/set_tp_time {\"tp_time\":$(tp_time),\"charge_interval\":$(charge_interval)}"
+            "template": "function lstp:menu/settings/set_tp_time {\"tp_time\":$(tp_time),\"charge_interval\":$(charge_interval),allow_cross_dimensional_tp:\"$(allow_cross_dimensional_tp)\"}"
         }
     },
     "no": {

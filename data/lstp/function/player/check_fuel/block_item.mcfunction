@@ -1,0 +1,1 @@
+execute if data storage lstp:config {allow_item_fuel:true} run return run function lstp:player/check_fuel/block_item_macro with storage lstp:config

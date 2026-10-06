@@ -1,0 +1,88 @@
+{
+    "title": [
+        {"translate": "selectWorld.dataPacks","color": "gray"},
+        {"text": " > ","color": "dark_gray"},
+        {"text": "Lodestone TP","color": "gray"},
+        {"text": " > ","color": "dark_gray"},
+        {"text": "Server Settings","color": "gray"},
+        {"text": " > ","color": "dark_gray"},
+        {"text": "Fuel","color": "white"}
+    ],
+    "type": "confirmation",
+    "inputs": [
+        {
+            "label": "Fuel Type",
+            "key": "fuel_type",
+            "type": "minecraft:single_option",
+            "options": [
+                {
+                    "display": "None (Free)",
+                    "id": "none"
+                },
+                {
+                    "display": "Item",
+                    "id": "item",
+                    "initial": true
+                },
+                {
+                    "display": "Xp",
+                    "id": "xp"
+                },
+                {
+                    "display": "Item OR Xp (Prioritize Item)",
+                    "id": "item_or_xp"
+                },
+                {
+                    "display": "Item OR Xp (Prioritize Xp)",
+                    "id": "xp_or_item"
+                },
+                {
+                    "display": "Item AND Xp",
+                    "id": "item_and_xp"
+                }
+            ]
+        },
+        {
+            "label": "Fuel Item",
+            "key": "fuel_item_id",
+            "type": "minecraft:text",
+            "initial": "minecraft:ender_pearl"
+        },
+        {
+            "label": "Item Cost",
+            "key": "fuel_item_count",
+            "type": "minecraft:number_range",
+            "initial": 1,
+            "start": 0,
+            "end": 256,
+            "step": 1,
+            "label_format": "%1$s: %2$s item(s)"
+        },
+        {
+            "label": "Xp Cost",
+            "key": "fuel_level_count",
+            "type": "minecraft:number_range",
+            "initial": 1,
+            "start": 0,
+            "end": 100,
+            "step": 1,
+            "label_format": "%1$s: %2$s level(s)"
+        }
+    ],
+    "yes": {
+        "label": "Confirm and Continue",
+        "action": {
+            "type": "dynamic/run_command",
+            "template": "function lstp:menu/settings/set_fuel {fuel_type:\"$(fuel_type)\",fuel_item_id:\"$(fuel_item_id)\",fuel_item_count:$(fuel_item_count),fuel_level_count:$(fuel_level_count)}"
+        }
+    },
+    "no": {
+        "label": {"translate": "gui.back"},
+        "action": {
+            "type": "show_dialog",
+            "dialog": "lstp:server_config"
+        }
+    },
+    "after_action": "none",
+    "pause": false
+}

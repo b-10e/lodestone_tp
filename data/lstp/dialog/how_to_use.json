@@ -97,7 +97,7 @@
         {
             "type": "minecraft:plain_message",
             "contents": {
-                "text":"Ender Pearls may also be supplied from a block directly underneath the Lodestone. All vanilla blocks and most modded blocks are supported. Ender Pearls in containers will be prioritized over ones held in hand.",
+                "text":"Ender Pearls may also be supplied from a container block directly underneath the Lodestone. Ender Pearls in containers will be prioritized over ones held in hand.",
                 "color": "gray"
             }
         },

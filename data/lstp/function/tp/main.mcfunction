@@ -23,7 +23,7 @@ execute as @s[tag=lstp.settings.show_name.actionbar] if data storage lstp:temp c
 execute as @s[tag=!lstp.settings.show_name.actionbar,tag=!lstp.settings.show_name.none] if data storage lstp:temp compass."minecraft:custom_name" run title @s title {storage:"lstp:temp",nbt:"compass.\"minecraft:custom_name\"",interpret:true}
 
 # consume fuel
-function lstp:tp/consume_fuel/main with storage lstp:config
+function lstp:tp/consume_fuel/main
 
 # backwarp prevention
 tag @s add lstp.backwarp_prevention
