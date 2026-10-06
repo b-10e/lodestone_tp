@@ -13,7 +13,7 @@
     {
       "type": "minecraft:plain_message",
       "contents": {
-        "text":"A convenient way to get around the world!",
+        "text":"Use Lodestones to teleport!",
         "color":"white"
       },
       "width": 300
