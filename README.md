@@ -8,7 +8,7 @@ This datapack allows Lodestones to be used for teleportation.
 Crouch on a Lodestone while holding both an Ender Pearl and a Lodestone Compass.
 After 3 seconds, you will teleport to the Lodestone Compass' destination. 
 
-<img width="400" height="225" alt="2026-09-30 13-05-17" src="https://github.com/user-attachments/assets/5de8bde0-80e5-499c-9274-bbacbe7a815e" />
+<img width="377" height="214" alt="tp(1)" src="https://github.com/user-attachments/assets/f2d46a9d-2fce-4250-a24d-89c32c8bdf8a" />
 
 -   Ender Pearls can alternatively be supplied from any inventory block below the Lodestone, such as a Chest, Barrel or Hopper.
 
