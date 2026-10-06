@@ -1,6 +1,3 @@
-# cooldown
-#scoreboard players set @s lstp.charge_time -30
-
 # store destination
 execute \
     align xyz positioned ~0 ~0 ~0 \

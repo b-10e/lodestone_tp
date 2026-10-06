@@ -1,7 +1,7 @@
 # backwarp prevention check
 execute \
-    unless score @s lstp.charge_time matches ..-1 \
     unless predicate lstp:on_lodestone \
+    if predicate lstp:on_ground \
         run tag @s remove lstp.backwarp_prevention
 
 # move charge time towards 0
