@@ -41,12 +41,12 @@
             "tooltip": "Toggle the sneak requirement to teleport"
         },
         {
-            "label": "Destination Name Display...",
+            "label": [{"sprite": "minecraft:item/oak_sign","atlas": "minecraft:items"},{"text":" Toggle Compass Name"}],
             "action": {
-                "type": "minecraft:show_dialog",
-                "dialog": "lstp:destination_name"
+                "type": "minecraft:run_command",
+                "command": "trigger lstp.menu.trigger set 5"
             },
-            "tooltip": "Configure destination name display"
+            "tooltip": "Toggle displaying the compass name after teleporting"
         }
     ],
     "after_action": "none",

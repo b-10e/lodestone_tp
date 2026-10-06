@@ -1,5 +1,5 @@
-effect give @s minecraft:blindness 5 255 true
-effect give @s minecraft:nausea 5 255 true
+effect give @s[tag=!lstp.settings.tp_flash.false] minecraft:blindness 5 255 true
+effect give @s[tag=!lstp.settings.screen_wobble.false] minecraft:nausea 5 255 true
 
 playsound minecraft:block.creaking_heart.spawn block @a ~ ~ ~ 1 0.5
 playsound minecraft:block.respawn_anchor.set_spawn block @a ~ ~ ~ 1 0.5

@@ -1,5 +1,5 @@
 # cooldown
-scoreboard players set @s lstp.charge_time -30
+#scoreboard players set @s lstp.charge_time -30
 
 # store destination
 execute \
@@ -22,8 +22,7 @@ execute \
         run return run function lstp:tp/fail
 
 # store destination name if applicable
-execute as @s[tag=lstp.settings.show_name.actionbar] if data storage lstp:temp compass."minecraft:custom_name" run title @s actionbar {storage:"lstp:temp",nbt:"compass.\"minecraft:custom_name\"",interpret:true}
-execute as @s[tag=!lstp.settings.show_name.actionbar,tag=!lstp.settings.show_name.none] if data storage lstp:temp compass."minecraft:custom_name" run title @s title {storage:"lstp:temp",nbt:"compass.\"minecraft:custom_name\"",interpret:true}
+execute as @s[tag=!lstp.settings.show_name.false] if data storage lstp:temp compass."minecraft:custom_name" run title @s title {storage:"lstp:temp",nbt:"compass.\"minecraft:custom_name\"",interpret:true}
 
 # consume fuel
 function lstp:tp/consume_fuel/main

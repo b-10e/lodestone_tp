@@ -1,7 +1,7 @@
 # succeed if no fuel required
 execute if data storage lstp:config {fuel_type:"none"} run return 1
 
-# check if items and xp are required
+# check if items and xp are both required
 execute \
     if data storage lstp:config {fuel_type:"item_and_xp"} \
     positioned ~ ~-2 ~ \
