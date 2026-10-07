@@ -2,7 +2,7 @@
   "id":"lstp",
   "pack": {
     "description": [{"text": "Lodestone TP","color": "dark_purple"},{"text":" | ","color":"dark_gray"},{"text":"v1.1.1","color":"gray"}],
-    "min_format": 88,
-    "max_format": 107
+    "min_format": 101,
+    "max_format": 101
   }
 }
