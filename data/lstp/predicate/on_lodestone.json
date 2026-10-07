@@ -1,11 +1,11 @@
 {
-    "type": "entity_properties",
-    "entity": "this",
-    "predicate": {
-        "stepping_on": {
-            "block": {
-                "blocks": "minecraft:lodestone"
-            }
-        }
-    }
+	"entity": "this",
+	"predicate": {
+		"minecraft:stepping_on": {
+			"block": {
+				"blocks": "minecraft:lodestone"
+			}
+		}
+	},
+	"condition": "minecraft:entity_properties"
 }
