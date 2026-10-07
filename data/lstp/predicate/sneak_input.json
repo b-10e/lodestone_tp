@@ -1,7 +1,7 @@
 {
 	"entity": "this",
 	"predicate": {
-		"minecraft:type_specific/player": {
+		"type_specific/player": {
 			"input": {
 				"sneak": true
 			}

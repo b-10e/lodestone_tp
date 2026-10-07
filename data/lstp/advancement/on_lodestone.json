@@ -4,7 +4,7 @@
 			"trigger": "minecraft:location",
 			"conditions": {
 				"player": {
-					"minecraft:stepping_on": {
+					"stepping_on": {
 						"block": {
 							"blocks": "minecraft:lodestone"
 						}
