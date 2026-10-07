@@ -1,7 +1,7 @@
 {
   "id":"lstp",
   "pack": {
-    "description": "Teleport to Lodestones",
+    "description": [{"text": "Lodestone TP","color": "dark_purple"},{"text":" | ","color":"dark_gray"},{"text":"v1.1.1","color":"gray"}],
     "min_format": 121,
     "max_format": 121
   }
