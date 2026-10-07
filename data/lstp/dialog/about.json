@@ -21,7 +21,7 @@
     {
       "type": "minecraft:plain_message",
       "contents": {
-        "text": "v1.0.0\nBy xokz",
+        "text": "v1.1.1\nBy xokz",
         "color": "gray"
       },
       "width": 300
