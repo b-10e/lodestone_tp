@@ -1,5 +1,4 @@
 # Lodestone TP
-**For Minecraft 26.3+**
 
 This datapack allows Lodestones to be used for teleportation.
 
@@ -8,13 +7,19 @@ This datapack allows Lodestones to be used for teleportation.
 Crouch on a Lodestone while holding both an Ender Pearl and a Lodestone Compass.
 After 3 seconds, you will teleport to the Lodestone Compass' destination. 
 
-<img width="377" height="214" alt="tp(1)" src="https://github.com/user-attachments/assets/f2d46a9d-2fce-4250-a24d-89c32c8bdf8a" />
+![A player crouching on a lodestone while holding a lodestone compass and an ender pearl. After 3 seconds, they teleport to the lodestone the compass is linked to.](https://cdn.modrinth.com/data/t5UBwoi0/images/6d008d3cdf287ebd6e722c3c30923dfbc47f1073.gif)
 
 -   Ender Pearls can alternatively be supplied from any inventory block below the Lodestone, such as a Chest, Barrel or Hopper.
 
 -   A Lodestone Compass may also be placed in an Item Frame up to 5 blocks above the Lodestone to provide a destination. A Lodestone Compass held in the hand will still take priority over one in an Item Frame.
 
 ----
+
+### Settings
+
+Lodestone TP has a dedicated menu where server settings and player preferences can be changed.
+
+![Navigating to the Lodestone TP Menu by clicking Escape, Data Packs, Lodestone TP](https://cdn.modrinth.com/data/t5UBwoi0/images/e1a3671efebe0ca0f627a1ecd0e42ae4eafd7702.gif)
 
 ### Compatibility
 
